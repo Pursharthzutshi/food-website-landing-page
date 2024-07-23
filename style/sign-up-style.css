@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.container,
+form,
+.left-sidebar,.button-container {
+    display: flex;
+}
+
+.container {
+    flex-direction: row;
+}
+
+.container {
+    gap: 230px;
+}
+
+form,
+.left-sidebar,.button-container {
+    flex-direction: column;
+}
+body::-webkit-scrollbar,.feedback-box-div {
+    background: linear-gradient(to left, rgb(184, 31, 11), rgb(220, 28, 3));
+}
+
+body::-webkit-scrollbar-thumb,.feedback-box-div {
+    background: rgb(255, 132, 102);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    display: hidden;
+}
+
+body,.feedback-box-div {
+    overflow-x: hidden;
+}
+
+
+form {
+    gap: 30px;
+}
+
+.left-sidebar {
+    width: 30rem;
+    height: 44.6rem;
+    background: linear-gradient(to left, rgb(255, 51, 0), red);
+    color: white;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar h1 {
+    color: white;
+    padding: 8px 12px 8px 12px;
+}
+
+.main-page {
+    padding: 20px 0px 0px 0px;
+}
+
+h3 {
+    margin-left: 60px;
+    text-align: center;
+}
+
+input {
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 8px 102px 8px 12px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+input:focus {
+    border: 1px solid orange;
+    transition: .3s;
+}
+
+button {
+    margin: 20px 0px 0px 100px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 22px 8px 22px;
+    font-family: 'Montserrat';
+    box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
+    background: linear-gradient(to left, rgb(255, 51, 0), rgb(255, 78, 33));
+    outline: none;
+}
+
+.button-container button:hover{
+    background: white;
+    cursor: pointer;
+    box-shadow: .2px .2px 8px .2px lightgray;
+    transition: .2s;
+}
+
+.icon-images {
+    width: 20rem;
+    height: auto;
+}
+
+.button-container{
+    margin-left: -70px;
+}
+
+.button-container button:nth-child(1) {
+    box-shadow: .2px .2px 8px .2px rgb(255, 51, 0);
+    background: linear-gradient(to left, rgb(255, 51, 0), rgb(255, 78, 33));
+}
+.button-container button:nth-child(2) {
+    box-shadow: .2px .2px 8px .2px rgb(245, 27, 27);
+    background: linear-gradient(to left, rgb(245, 47, 47), rgb(251, 0, 0));
+}
+.button-container button:nth-child(3) {
+    box-shadow: .2px .2px 8px .2px rgb(11, 124, 194);
+    background: linear-gradient(to left, rgb(1, 138, 223), rgb(0, 95, 179));
+}

@@ -1,0 +1,412 @@
+.customer-service-box,
+.log-in-box-div,
+.log-in-box-container,
+.view-feedback-div,
+.feedback-box-row,
+.give-feedback-remove-icon-div,
+.give-feedback-box,
+.add-feedback-box-button-div {
+    display: flex;
+}
+
+.customer-service-box,
+.log-in-box-container,
+.view-feedback-div,
+.feedback-box-row,
+.give-feedback-remove-icon-div,
+.feedback-box-column,
+.add-feedback-box-button-div {
+    flex-direction: row;
+}
+
+.log-in-box-container,
+.customer-service-icon,
+.customer-service-box,
+.feedback-box-div,
+.give-feedback-box {
+    position: fixed;
+}
+
+.log-in-box-div,
+.log-in-box-container,
+.customer-service-box,
+.feedback-box-column,
+.give-feedback-box {
+    flex-direction: column;
+}
+
+.box-log-in-button,
+.create-your-account,
+.log-in-button:hover,
+.customer-service-icon,
+.send-message-button,
+.add-feedback-box-button,
+.view-feedback-button {
+    color: white;
+}
+
+.log-in-heading,
+.create-account-heading,
+.customer-service-box-text,
+.feedback-box-div h2,
+.view-feedback-button {
+    text-align: center;
+}
+
+.log-in-box-div,
+.send-message-button:hover,
+.show-log-in-error,
+.customer-service-box {
+    background: white;
+}
+
+.log-in-box-div,
+.send-message-button,
+.customer-service-box {
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+.log-in-box-container,
+.view-feedback-div,
+.add-feedback-box-button-div {
+    justify-content: center;
+    align-content: center;
+}
+
+.log-in-box-div,
+.send-message-button {
+    animation-name: fadeIn;
+}
+
+.close-log-in-box-icon,
+.log-in-heading {
+    color: rgb(255, 58, 40);
+}
+
+.customer-service-big-icon,
+.customer-service-box-text {
+    color: rgb(255, 81, 0);
+}
+
+.show-message,
+.contact-us-error {
+    font-family: 'Roboto';
+}
+
+.log-in-box-container {
+    z-index: +1;
+    left: 37%;
+    top: 20%;
+}
+
+.log-in-box-div {
+    box-shadow: .2px .02px 6px .2px lightgray;
+    z-index: 1;
+    width: 22rem;
+    height: 23rem;
+    padding: 20px 22px 12px 22px;
+    gap: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: rotate(5deg);
+        background: lightgray;
+        margin-top: 50px;
+        opacity: 0;
+        box-shadow: 2px 2px 62px 2px white;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.close-log-in-box-icon {
+    font-size: 1.5rem;
+    margin-left: 300px;
+    color: red;
+}
+
+.log-in-heading {
+    margin-top: -45px;
+    color: rgb(255, 58, 40);
+}
+
+.log-in-input {
+    margin-top: -10px;
+    outline: none;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    padding: 8px 12px 8px 12px;
+}
+
+.box-log-in-button,
+.create-your-account {
+    padding: 8px 12px 8px 12px;
+    box-shadow: .2px .2px 12px .2px rgb(241, 58, 58);
+}
+
+.box-log-in-button {
+    background: rgb(255, 58, 40);
+}
+
+.create-account-heading {
+    margin-top: 5px;
+    color: black
+}
+
+.create-your-account {
+    margin-top: -7px;
+    background: rgb(137, 11, 0);
+}
+
+.show-log-in-error {
+    width: 105.5%;
+    padding: 8px 12px 18px 13px;
+    margin: -3px 0px 0px -22px;
+    color: red;
+}
+
+.customer-service-button-div {
+    justify-content: flex-end;
+}
+
+.customer-service-icon {
+    right: 20px;
+    bottom: 10px;
+    z-index: +1;
+    font-size: 2.5rem;
+    background: rgb(255, 58, 40);
+    box-shadow: .2px .2px 3px .2px rgb(255, 58, 40);
+    padding: 10px 12px 7px 12px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.customer-service-box {
+    padding: 5px 8px 12px 16px;
+    width: 18.5rem;
+    height: 33rem;
+    box-shadow: .2px .2px 12px .2px gray;
+    bottom: 70px;
+    right: 0;
+    z-index: +1;
+    animation: customerServiceBoxFadeIn 1s ease;
+}
+
+@keyframes customerServiceBoxFadeIn {
+    0% {
+        background: transparent;
+        opacity: 0;
+        transform: rotate(-20deg);
+        box-shadow: 2px 2px 62px 2px white;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.customer-service-heading {
+    margin-top: -10px;
+}
+
+.donation-box-heading {
+    text-align: center;
+}
+
+.customer-service-input {
+    border: none;
+    padding: 8px 12px 8px 12px;
+    width: 84%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: .2px .2px 5px .2px lightgray;
+}
+
+.customer-service-input::placeholder {
+    font-family: 'Montserrat';
+}
+
+.customer-service-input:focus {
+    outline: none;
+    transition: .3s;
+    box-shadow: 0px 0px 1px 1.5px rgb(255, 94, 0);
+}
+
+.delete-customer-service-box-icon {
+    color: rgb(243, 2, 2);
+    font-size: 2.3rem;
+    margin-left: 248px;
+}
+
+.send-message-button {
+    font-size: 1.1rem;
+    border-radius: 200px;
+    background: rgb(255, 81, 0);
+    padding: 8px 6px 4px 10px;
+    position: absolute;
+    top: 90px;
+    left: 270px;
+    z-index: +1;
+}
+
+.send-message-button:hover {
+    transition: .3s;
+    box-shadow: .2px .2px 12px .2px lightgray;
+    color: rgb(255, 81, 0);
+    padding: 8px 6px 4px 10px;
+}
+
+.customer-service-big-icon {
+    margin: 30px 0px 0px 80px;
+    font-size: 8rem;
+}
+
+.contact-us-error {
+    margin-left: -20px;
+    color: rgb(167, 9, 9);
+}
+
+.remove-feedback-box-icon {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.feedback-box-div {
+    visibility: hidden;
+    bottom: 23%;
+    left: 35%;
+    box-shadow: .2px .2px 12px .2px black;
+    padding: 12px 16px 2px 12px;
+    overflow-y: scroll;
+}
+
+.feedback-box-row img {
+    border-radius: 200px;
+    width: 2rem;
+    height: 2rem;
+    margin: 18px 0px 0px 10px;
+}
+
+.feedback-box-column h3,
+.feedback-box-column p {
+    margin-left: 20px;
+}
+
+.feedback-box-column h3 {
+    font-size: 1.1rem;
+}
+
+.feedback-box-column p {
+    margin-top: -10px;
+    line-height: 22px;
+    font-size: .9rem;
+}
+
+.feedback-box-icons-row {
+    font-size: .9rem;
+    margin: -3px 0px 0px 20px;
+}
+
+.feedback-box-icons-row ion-icon {
+    color: gold;
+}
+
+.add-feedback-box-button {
+    padding: 6px 12px 6px 12px;
+    font-size: .9rem;
+    border-radius: 200px;
+    background: orangered;
+    box-shadow: .2px .2px 6px .2px orangered;
+}
+
+.view-feedback-button {
+    padding: 8px 12px 8px 12px;
+    border-radius: 200px;
+    background: orangered;
+}
+
+.feedback-name-input {
+    outline: none;
+    width: 95%;
+    padding: 5px 2px 5px 7px;
+    border: none;
+    box-shadow: .2px .2px 12px .2px lightgray;
+}
+
+.feedback-name-input::placeholder {
+    font-family: 'Montserrat';
+}
+
+.feedback-text-area {
+    width: 75%;
+}
+
+.give-feedback-box {
+    gap: 20px;
+    padding: 16px 2px 2px 12px;
+    top: 25%;
+    left: 34%;
+    width: 30rem;
+    height: 26rem;
+    background: white;
+    box-shadow: .2px .2px 6px .2px gray;
+    animation-name: giveFeedbackBox;
+    animation-duration: .3s;
+}
+
+.give-feedback-button {
+    color: white;
+    background: orangered;
+    padding: 12px 2px 12px 2px;
+    width: 95%;
+}
+
+.give-feedback-heading {
+    margin-top: -30px;
+}
+
+@keyframes giveFeedbackBox {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.give-feedback-remove-icon-div {
+    justify-content: flex-end;
+}
+
+.give-feedback-remove-icon {
+    font-size: 1.6rem;
+    color: red;
+}
+
+.change-theme-icon-button {
+    position: fixed;
+    top: 92%;
+    left: 1%;
+    color: black;
+    font-size: 1.3rem;
+    box-shadow: .2px .2px 3px .2px black;
+    padding: 9px 10px 6px 10px;
+    border-radius: 200px;
+    background: white;
+}
+
+.top-button-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 82%;
+    left: 95%;
+    padding: 12px 13px 12px 13px;
+    background: #d90a0a;
+    color: white;
+    border-radius: 200px;
+    box-shadow: .2px .2px 6px .2px #dc0000;
+}
